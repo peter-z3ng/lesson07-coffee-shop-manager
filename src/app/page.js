@@ -8,15 +8,13 @@ import OrderList from '../components/OrderList';
 
 export default function CoffeeShopManager() {
     // ========================================
-    // 📚 DEMO: useState with Customer Count
+    // 📚 DEMO useState 1: with Customer Count
     // ========================================
     const [customerCount, setCustomerCount] = useState(0);
 
     // ========================================
-    // 🎯 EXERCISE: useState with Orders Array
+    // 📚 DEMO useState 2: with Orders Array
     // ========================================
-    // TODO: Create a state for orders array
-    // Hint: Use useState with an empty array as initial value
     const [orders, setOrders] = useState([]);
 
     // ========================================
