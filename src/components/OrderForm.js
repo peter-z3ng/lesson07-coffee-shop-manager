@@ -12,6 +12,15 @@ export default function OrderForm({ orders, setOrders }) {
 
     const handleAddOrder = (e) => {
         e.preventDefault();
+
+        if (coffeeName.trim() === '') return;
+
+        // add to order array
+        setOrders([...orders, coffeeName]);
+        console.log('Order added:', coffeeName);
+
+        // ✅ RESET input after adding
+        setCoffeeName('');  
         
         // ========================================
         // 🎯 EXERCISE useState 1: Reset Coffee Name
